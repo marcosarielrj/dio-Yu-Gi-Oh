@@ -30,15 +30,47 @@
         </video>
     </div>
     <div class="container">
-        <div class="container-left">
-            <div class="pontuacao"></div>
-            <div class="menu-avatar"></div>
-            <div class="card-details"></div>
-
+        <div class="container-left framed-golden-2">
+            <div class="pontuacao-caixa frame">
+                <span id="pontos">Win : 0 | Lose: 0</span>
+            </div>
+            <div class="foto-carta"></div>
+                <img id="imagem-carta">
+            <div class="carta-detalhes frame">                
+                
+                <p id="nome-carta">A</p>
+                <p id="tipo-carta">A</p>
+            
+            </div>
         </div>
         <div class="container-right">
-            <div class="card-box"></div>
+            <div class="card-box-container">
+            
+                <div class="card-box framed" id="computador">
 
+                </div>
+                <div class="card-versus-container">
+                    <div class="versus-cima">
+                        <div class="card-infield" >
+                            <img  id="campo-carta-jogador" height="180px" width="125px">
+                        </div>
+                        
+                        <img height="100px" src="./src/assets/icons/millenium2.png"">
+                        
+                        <div class="card-infield">
+                            <img  id="campo-carta-computador" height="180px" width="125px">
+                        </div>
+                    </div>
+                    <div class="versus-baixo">
+                        <button id="proximo-duelo" class="rpgui-button" onclick="resetarduelo()">GANHOU</button>
+
+                    </div>
+
+                </div>
+                <div class="card-box framed" id="jogador">
+
+            </div>
+        </div>
         </div>
     </div>
 
