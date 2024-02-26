@@ -19,10 +19,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <!-- main style -->
     <link rel="stylesheet" href="./src/styles/main.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-
+    <audio id="bgm" loop>
+        <source src="./src/assets/audios/egyptian_duel.mp3" type="audio/mp3">
+    </audio>
     <div class="bg-video">
 
         <video class="video" autoplay loop muted>
@@ -38,8 +42,8 @@
                 <img id="imagem-carta">
             <div class="carta-detalhes frame">                
                 
-                <p id="nome-carta">A</p>
-                <p id="tipo-carta">A</p>
+                <p id="nome-carta">Selecione</p>
+                <p id="tipo-carta">uma Carta</p>
             
             </div>
         </div>
@@ -62,7 +66,7 @@
                         </div>
                     </div>
                     <div class="versus-baixo">
-                        <button id="proximo-duelo" class="rpgui-button" onclick="resetarduelo()">GANHOU</button>
+                        <button id="proximo-duelo" class="rpgui-button" onclick="resetarDuelo()">GANHOU</button>
 
                     </div>
 
